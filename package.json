@@ -1,0 +1,15 @@
+{
+  "name": "blacknet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/start.sh",
+  "scripts": {
+    "poststart": "bash clearfile.sh",
+    "prestart": "clear && bash header.sh && sleep 3 && bash bin/prescript.sh",
+    "start": "clear && sudo bash bin/install.sh -1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "SL33PZ",
+  "license": "ISC"
+}
